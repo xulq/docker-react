@@ -4,3 +4,6 @@ services:
 
 before_install:
   - docker build -t xulq/docker-react -f Dockerfile.dev .
+
+scripts:
+  docker run xulq/docker-react npm run test -- --coverage
